@@ -1,7 +1,7 @@
 pipeline{
     agent any
-    states {
-        state('Clone'){
+    stages {
+        stage('Clone'){
             steps {
                 git 'https://github.com/nttugit/learn-jenkins.git'
             }
